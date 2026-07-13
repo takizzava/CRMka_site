@@ -1,6 +1,6 @@
-# CRMka product website
+# GeeckCRM product website
 
-Многостраничный продающий сайт для CRMka.
+Многостраничный продающий сайт для GeeckCRM.
 
 ## Страницы
 - index.html — главная продающая страница

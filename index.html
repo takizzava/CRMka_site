@@ -3,113 +3,393 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRMka — система продаж, которая не дает терять клиентов</title>
-    <meta name="description" content="Продающий сайт CRMka: заявки, воронка продаж, контроль менеджеров, автоматизация и аналитика для владельцев бизнеса." />
+    <title>GeeckCRM — CRM для команд, которым нужен контроль всей выручки</title>
+    <meta
+      name="description"
+      content="GeeckCRM объединяет лиды, сделки, коммуникации, автоматизацию, аналитику и контроль команды в одной системе продаж."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-<header class="site-header">
-  <a class="brand" href="index.html" aria-label="CRMka">
-    <img src="assets/logo-hq.png" alt="CRMka" />
-    <span>CRMka</span>
-  </a>
-  <nav class="nav">
-    <a class="active" href="index.html">Главная</a>
-    <a class="" href="product.html">Возможности</a>
-    <a class="" href="automation.html">Автоматизация</a>
-    <a class="" href="prices.html">Тарифы</a>
-    <a class="" href="about.html">О нас</a>
-  </nav>
-  <a class="header-cta" href="index.html#request">Получить демо</a>
-</header>
-    <main>
-<section class="hero">
-  <div class="hero-copy reveal">
-    <p class="eyebrow">Система продаж для растущих компаний</p>
-    <h1>Не теряйте клиентов. Доведите каждую заявку до оплаты.</h1>
-    <p class="lead">CRMka собирает обращения из всех каналов, показывает слабые места отдела продаж и помогает руководителю видеть, где прямо сейчас застряли деньги.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#request">Получить демонстрацию</a>
-      <a class="btn" href="product.html">Посмотреть возможности</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="GeeckCRM">
+          <img src="assets/logo-hq.png" alt="GeeckCRM" />
+          <span>GeeckCRM</span>
+        </a>
+        <nav class="nav">
+          <a class="active" href="index.html">Главная</a>
+          <a href="product.html">Возможности</a>
+          <a href="automation.html">Автоматизация</a>
+          <a href="prices.html">Тарифы</a>
+          <a href="about.html">О продукте</a>
+        </nav>
+        <a class="header-cta" href="#request">Запросить демо</a>
+      </header>
+
+      <main>
+        <section class="hero hero-premium">
+          <div class="hero-copy reveal">
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+              CRM для управляемых продаж, а не для хаоса в таблицах
+            </div>
+            <p class="eyebrow">Единая система продаж</p>
+            <h1>Все лиды, сделки, диалоги и контроль команды в одной системе.</h1>
+            <p class="lead">
+              GeeckCRM собирает весь входящий поток, ведет клиента по воронке, ставит
+              следующий шаг, показывает просадки в SLA и дает руководителю ясную
+              картину по деньгам, а не набор разрозненных чатов и обещаний.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#request">Попробовать с демо-сценарием</a>
+              <a class="btn" href="product.html">Посмотреть возможности</a>
+            </div>
+            <div class="hero-points">
+              <span>Лиды и воронка</span>
+              <span>Омниканальные коммуникации</span>
+              <span>Задачи и календарь</span>
+              <span>Автоматизация и KPI</span>
+            </div>
+            <div class="hero-proof">
+              <div class="proof-card">
+                <strong>24/7</strong>
+                <span>контроль входящего потока и следующего шага</span>
+              </div>
+              <div class="proof-card">
+                <strong>1 экран</strong>
+                <span>для руководителя, менеджера и текущей выручки</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="app-window float-card" data-float="18">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="window-layout">
+                <aside class="sidebar-mini">
+                  <div class="sidebar-brand">GeeckCRM</div>
+                  <div class="sidebar-item active">Обзор</div>
+                  <div class="sidebar-item">Лиды</div>
+                  <div class="sidebar-item">Воронка</div>
+                  <div class="sidebar-item">Задачи</div>
+                  <div class="sidebar-item">Аналитика</div>
+                  <div class="sidebar-item">Интеграции</div>
+                </aside>
+                <div class="dashboard-scene">
+                  <div class="scene-top">
+                    <div class="stat-panel">
+                      <span>Новая выручка</span>
+                      <strong>₽ 4.8M</strong>
+                      <small>+18% к прошлой неделе</small>
+                    </div>
+                    <div class="stat-panel">
+                      <span>Первый ответ</span>
+                      <strong>04:12</strong>
+                      <small>в пределах SLA у 86% лидов</small>
+                    </div>
+                    <div class="stat-panel accent">
+                      <span>Автоматизация</span>
+                      <strong>312</strong>
+                      <small>действий без ручного контроля</small>
+                    </div>
+                  </div>
+                  <div class="scene-grid">
+                    <div class="pipeline-preview">
+                      <div class="panel-heading">
+                        <strong>Воронка</strong>
+                        <span>42 активные сделки</span>
+                      </div>
+                      <div class="pipeline-columns">
+                        <div class="pipeline-column">
+                          <b>Новый лид</b>
+                          <span>14</span>
+                          <i>5 мин назад</i>
+                        </div>
+                        <div class="pipeline-column">
+                          <b>Квалификация</b>
+                          <span>9</span>
+                          <i>3 без ответа</i>
+                        </div>
+                        <div class="pipeline-column highlight">
+                          <b>КП отправлено</b>
+                          <span>11</span>
+                          <i>₽ 1.6M</i>
+                        </div>
+                        <div class="pipeline-column">
+                          <b>Счет</b>
+                          <span>8</span>
+                          <i>2 требуют звонок</i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activity-panel">
+                      <div class="panel-heading">
+                        <strong>Активность</strong>
+                        <span>все каналы</span>
+                      </div>
+                      <div class="activity-list">
+                        <div class="activity-item">
+                          <span class="channel-mark whatsapp"></span>
+                          <div>
+                            <b>WhatsApp лид</b>
+                            <p>Нужен ответ в течение 9 минут</p>
+                          </div>
+                        </div>
+                        <div class="activity-item">
+                          <span class="channel-mark telegram"></span>
+                          <div>
+                            <b>Входящий звонок</b>
+                            <p>Привязан к сделке “Clinic East”</p>
+                          </div>
+                        </div>
+                        <div class="activity-item">
+                          <span class="channel-mark mail"></span>
+                          <div>
+                            <b>Письмо без ответа</b>
+                            <p>Автоматизация поставила задачу менеджеру</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img class="hero-mascot-figure float-card" data-float="14" src="assets/mascot-run.png" alt="Маскот GeeckCRM" />
+          </div>
+        </section>
+
+        <section class="metrics reveal">
+          <div>
+            <strong data-counter="37">0</strong>
+            <span>меньше потерянных лидов после сбора каналов в одну воронку</span>
+          </div>
+          <div>
+            <strong data-counter="52">0</strong>
+            <span>быстрее первый ответ благодаря маршрутизации и задачам</span>
+          </div>
+          <div>
+            <strong data-counter="64">0</strong>
+            <span>меньше сделок без движения за счет автоматизации и следующего шага</span>
+          </div>
+          <div>
+            <strong data-counter="28">0</strong>
+            <span>рост управляемости отдела через панель руководителя, KPI и детализацию</span>
+          </div>
+        </section>
+
+        <section class="section split section-emphasis">
+          <div class="section-title reveal">
+            <p class="eyebrow">Почему GeeckCRM</p>
+            <h2>Продажи становятся системой, где понятно, что происходит с каждым лидом и каждым рублем.</h2>
+          </div>
+          <div class="benefit-list reveal">
+            <article>
+              <b>Весь входящий поток под контролем</b>
+              <p>Сайт, формы, мессенджеры, звонки и почта сразу становятся частью одной клиентской истории.</p>
+            </article>
+            <article>
+              <b>Команда работает по следующему шагу</b>
+              <p>У каждого лида есть ответственный, дедлайн, задача и видимое место в воронке без ручных напоминаний.</p>
+            </article>
+            <article>
+              <b>Руководитель видит причины просадки</b>
+              <p>Панель руководителя показывает SLA, конверсию, узкие места, зависшие сделки и проблемные каналы без сборки отчетов вручную.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title center reveal">
+            <p class="eyebrow">Ключевые модули</p>
+            <h2>Сайт продает не “абстрактную CRM”, а реальный продуктовый контур отдела продаж.</h2>
+            <p class="section-lead">
+              В GeeckCRM есть модули, которые нужны команде ежедневно: лиды, воронка, коммуникации,
+              задачи, автоматизация, аналитика, интеграции и корпоративный уровень контроля.
+            </p>
+          </div>
+          <div class="feature-grid product-grid-strong">
+            <article class="feature reveal">
+              <span>01</span>
+              <h3>Лиды и воронка</h3>
+              <p>Новые заявки, сделки, этапы, статусы, причины проигрыша и ясная картина по воронке в одном месте.</p>
+            </article>
+            <article class="feature reveal">
+              <span>02</span>
+              <h3>Центр коммуникаций</h3>
+              <p>Чаты, звонки, письма и история контакта собираются в единую ленту, где не теряется контекст клиента.</p>
+            </article>
+            <article class="feature reveal">
+              <span>03</span>
+              <h3>Tasks + calendar</h3>
+              <p>Следующий шаг, дедлайны, приоритеты и контроль просрочек остаются частью сделок, а не отдельным списком.</p>
+            </article>
+            <article class="feature reveal">
+              <span>04</span>
+              <h3>Автоматизация</h3>
+              <p>Напоминания, маршрутизация, проверка правил, шаблоны сценариев и контроль по времени снимают рутину с команды.</p>
+            </article>
+            <article class="feature reveal">
+              <span>05</span>
+              <h3>Аналитика и KPI</h3>
+              <p>Управленческая панель, конверсия по этапам, детализация и показатели менеджеров помогают принимать решения быстро.</p>
+            </article>
+            <article class="feature reveal">
+              <span>06</span>
+              <h3>Интеграции и телефония</h3>
+              <p>Интеграции с каналами входящих лидов, телефонией и внешними сервисами подключаются как часть единого процесса продаж.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section workflow-section">
+          <div class="section-title reveal">
+            <p class="eyebrow">Как это работает</p>
+            <h2>От первого касания до оплаты команда двигается по одному прозрачному маршруту.</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="workflow-step reveal">
+              <strong>1. Сбор</strong>
+              <p>Лид приходит из сайта, мессенджера, рекламы, телефонии или почты и сразу попадает в CRM.</p>
+            </article>
+            <article class="workflow-step reveal">
+              <strong>2. Распределение</strong>
+              <p>GeeckCRM назначает ответственного, ставит следующий шаг и применяет правила автоматизации по сценарию команды.</p>
+            </article>
+            <article class="workflow-step reveal">
+              <strong>3. Работа</strong>
+              <p>Менеджер ведет диалог, двигает сделку по этапам, фиксирует задачу, встречу и коммерческое предложение.</p>
+            </article>
+            <article class="workflow-step reveal">
+              <strong>4. Контроль</strong>
+              <p>Руководитель видит SLA, зависшие сделки, потерю конверсии и реальные причины, которые тормозят выручку.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section visual-band premium-band reveal" id="channels">
+          <div class="band-copy">
+            <p class="eyebrow">Омниканальность</p>
+            <h2>Коммуникации больше не размазаны по вкладкам, сотрудникам и личным мессенджерам.</h2>
+            <p>
+              Каждый звонок, сообщение, письмо и форма становятся частью общей истории клиента. Это
+              позволяет продолжать диалог без провалов и понимать, что именно сработало в канале.
+            </p>
+            <div class="channels">
+              <span>Формы сайта</span>
+              <span>WhatsApp</span>
+              <span>Telegram</span>
+              <span>Почта</span>
+              <span>Телефония</span>
+              <span>Реклама</span>
+              <span>Соцсети</span>
+              <span>Виджеты чата</span>
+            </div>
+          </div>
+          <div class="conversation-cloud">
+            <div class="message-card">
+              <b>WhatsApp</b>
+              <p>Новый запрос на консультацию</p>
+            </div>
+            <div class="message-card">
+              <b>Звонок</b>
+              <p>Пропущенный звонок → лид + задача</p>
+            </div>
+            <div class="message-card">
+              <b>Почта</b>
+              <p>КП отправлено, нужен повторный контакт</p>
+            </div>
+            <div class="message-card">
+              <b>Лента</b>
+              <p>Вся история касаний закреплена за сделкой</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section split section-spotlight">
+          <div class="section-title reveal">
+            <p class="eyebrow">Автоматизация</p>
+            <h2>Рутина обрабатывается системой, а команда фокусируется на переговорах и оплате.</h2>
+            <p class="section-lead">
+              GeeckCRM умеет запускать правила по событиям и времени: новый лид, отсутствие активности,
+              пропущенный звонок, эскалация просрочки или контроль сделки на этапе.
+            </p>
+          </div>
+          <div class="automation-flow reveal">
+            <div class="flow-node">Новый лид</div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node accent">Назначить менеджера</div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node">Создать следующий шаг</div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node">Проверить SLA через 24ч</div>
+            <div class="flow-arrow"></div>
+            <div class="flow-node risk">Эскалация руководителю</div>
+          </div>
+        </section>
+
+        <section class="section analytics-shell">
+          <div class="section-title center reveal">
+            <p class="eyebrow">Аналитика и корпоративный контур</p>
+            <h2>Понятная аналитика для роста и корпоративный контур для серьезной эксплуатации.</h2>
+          </div>
+          <div class="analytics-grid">
+            <article class="analytics-card reveal">
+              <strong>Панель руководителя</strong>
+              <p>Конверсия, SLA, потерянные лиды, причины проигрыша, загрузка менеджеров и реальные точки роста.</p>
+            </article>
+            <article class="analytics-card reveal">
+              <strong>Drill-down до сделки</strong>
+              <p>Из любой метрики можно провалиться в список сделок, звонков, задач или конкретный канал.</p>
+            </article>
+            <article class="analytics-card reveal">
+              <strong>Мультикомандный контур</strong>
+              <p>Роли, права, изоляция данных, tenant-aware архитектура и аккуратный контроль доступа.</p>
+            </article>
+            <article class="analytics-card reveal">
+              <strong>Интеграционная готовность</strong>
+              <p>GeeckCRM строится как продукт с автоматизацией, интеграциями, телефонией и масштабируемым рабочим контуром.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section pricing-teaser" id="request">
+          <div class="section-title center reveal">
+            <p class="eyebrow">Демонстрация</p>
+            <h2>Покажем GeeckCRM на ваших сценариях: где теряются лиды, как ускорить ответ и что автоматизировать первым.</h2>
+            <p class="section-lead">
+              Вместо абстрактной презентации вы получите живой демо-поток: воронка, коммуникации,
+              задачи, автоматизация и панель руководителя под реальные процессы отдела продаж.
+            </p>
+            <div class="hero-actions centered-actions">
+              <a class="btn primary" href="mailto:demo@geeckcrm.ru">Запросить демо</a>
+              <a class="btn" href="prices.html">Посмотреть тарифы</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>GeeckCRM</strong>
+          <span>CRM для команд, которым нужен порядок в лидах, коммуникациях, автоматизации и выручке.</span>
+        </div>
+        <a href="mailto:demo@geeckcrm.ru">demo@geeckcrm.ru</a>
+      </footer>
     </div>
-    <div class="hero-points">
-      <span>Заявки в одном месте</span>
-      <span>Контроль менеджеров</span>
-      <span>Напоминания и задачи</span>
-      <span>Понятная аналитика</span>
-    </div>
-  </div>
-  <div class="hero-media reveal">
-    <img class="mascot" src="assets/hero-mascot.jpg" alt="Маскот CRMka" />
-  </div>
-</section>
-
-<section class="metrics reveal">
-  <div><strong data-counter="37">0</strong><span>меньше потерянных заявок</span></div>
-  <div><strong data-counter="52">0</strong><span>быстрее первый ответ клиенту</span></div>
-  <div><strong data-counter="64">0</strong><span>меньше просрочек в работе</span></div>
-  <div><strong data-counter="28">0</strong><span>рост управляемости отдела</span></div>
-</section>
-
-<section class="section split">
-  <div class="section-title reveal">
-    <p class="eyebrow">Почему это покупают</p>
-    <h2>Владелец видит продажи как систему, а не как набор переписок и обещаний</h2>
-  </div>
-  <div class="benefit-list reveal">
-    <article><b>Клиенты не пропадают</b><p>Каждое обращение попадает в работу, получает ответственного и следующий шаг.</p></article>
-    <article><b>Команда работает дисциплинированно</b><p>Просрочки, забытые звонки и сделки без движения видны руководителю сразу.</p></article>
-    <article><b>Выручка становится понятнее</b><p>Вы видите, какие каналы дают заявки, где падает конверсия и кто приносит результат.</p></article>
-  </div>
-</section>
-
-<section class="section product-showcase">
-  <div class="section-title center reveal">
-    <p class="eyebrow">Что внутри</p>
-    <h2>Все, что нужно отделу продаж каждый день</h2>
-  </div>
-  <div class="feature-grid">
-    <a class="feature reveal" href="product.html"><span>01</span><h3>Воронка и заявки</h3><p>Простой рабочий экран для новых клиентов, сделок, задач и ответственных.</p></a>
-    <a class="feature reveal" href="automation.html"><span>02</span><h3>Автоматизация рутины</h3><p>Система сама напоминает, ставит задачи и не дает сделке остыть.</p></a>
-    <a class="feature reveal" href="product.html#control"><span>03</span><h3>Контроль результата</h3><p>Руководитель видит скорость обработки, просрочки, активность и деньги.</p></a>
-    <a class="feature reveal" href="product.html#channels"><span>04</span><h3>Все каналы связи</h3><p>Сайт, мессенджеры, почта и звонки собираются в единую картину клиента.</p></a>
-  </div>
-</section>
-
-<section class="section visual-band reveal">
-  <img src="assets/mascot-grid-wide.png" alt="Маскот CRMka в разных сценариях" />
-  <div>
-    <p class="eyebrow">Бренд, который запоминают</p>
-    <h2>CRMka выглядит дружелюбно, но работает как строгий отдел контроля продаж</h2>
-    <p>Маскот помогает сделать продукт живым и узнаваемым, а интерфейс остается спокойным, деловым и понятным для команды.</p>
-  </div>
-</section>
-
-<section class="section pricing-teaser" id="request">
-  <div class="section-title center reveal">
-    <p class="eyebrow">Тарифы и демонстрация</p>
-    <h2>Выберите формат внедрения под размер отдела продаж</h2>
-    <p class="section-lead">На отдельной странице собрали понятные пакеты: для старта, роста и команды с несколькими направлениями продаж.</p>
-    <div class="hero-actions centered-actions">
-      <a class="btn primary" href="prices.html">Смотреть тарифы</a>
-      <a class="btn" href="mailto:demo@crmka.ru">Запросить демонстрацию</a>
-    </div>
-  </div>
-</section></main>
-    
-<footer class="footer">
-  <div>
-    <strong>CRMka</strong>
-    <span>Система продаж для компаний, которым нужен порядок в заявках, команде и выручке.</span>
-  </div>
-  <a href="index.html#request">Запросить демонстрацию</a>
-</footer>
     <script src="script.js"></script>
   </body>
 </html>
