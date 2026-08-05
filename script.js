@@ -1,34 +1,4 @@
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) entry.target.classList.add("visible");
-    });
-  },
-  { threshold: 0.16 }
-);
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const menuBtn=document.querySelector('.menu-button'),mobileMenu=document.querySelector('.mobile-menu');menuBtn?.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open))});mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+if(matchMedia('(pointer:fine)').matches){document.querySelectorAll('[data-tilt]').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;const target=el.querySelector('.crm-window')||el;target.style.transform=`rotateY(${x*7-6}deg) rotateX(${-y*6+2}deg) translateZ(0)`});el.addEventListener('mouseleave',()=>{const target=el.querySelector('.crm-window')||el;target.style.transform=''})})}
 
-document.querySelectorAll(".reveal").forEach((node) => revealObserver.observe(node));
-
-document.querySelectorAll("[data-counter]").forEach((node) => {
-  const target = Number(node.dataset.counter || 0);
-  let started = false;
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting || started) return;
-        started = true;
-        const start = performance.now();
-        const duration = 1200;
-        const tick = (now) => {
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          node.textContent = Math.round(target * eased).toLocaleString("ru-RU");
-          if (progress < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-      });
-    },
-    { threshold: 0.5 }
-  );
-  counterObserver.observe(node);
-});
