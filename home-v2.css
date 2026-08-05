@@ -85,8 +85,8 @@
   pointer-events:none;
 }
 .hero-v4__glow{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
-.hero-v4__glow--a{width:340px;height:340px;background:rgba(19,78,74,.16);top:120px;left:-100px}
-.hero-v4__glow--b{width:440px;height:440px;background:rgba(30,199,139,.12);right:-110px;top:150px}
+.hero-v4__glow--a{width:380px;height:380px;background:rgba(19,78,74,.18);top:100px;left:-120px}
+.hero-v4__glow--b{width:500px;height:500px;background:rgba(30,199,139,.14);right:-140px;top:120px}
 
 .hero-v4__content{
   position:relative;z-index:2;
@@ -126,8 +126,9 @@
   inset:0;
   width:100%;
   height:100%;
-  pointer-events:none;
+  pointer-events:auto;
   z-index:1;
+  cursor:crosshair;
 }
 
 .hero-v4__screen{
@@ -346,10 +347,12 @@
   height:460px;
   border-radius:30px;
   background:
-    radial-gradient(circle at center,rgba(19,78,74,.04),transparent 60%),
-    linear-gradient(180deg,#fcfcfb 0%,#f3f4f2 100%);
-  border:1px solid rgba(19,78,74,.08);
+    radial-gradient(circle at 30% 40%,rgba(19,78,74,.06),transparent 50%),
+    radial-gradient(circle at 70% 70%,rgba(30,199,139,.04),transparent 50%),
+    linear-gradient(180deg,#081411 0%,#0d1d18 100%);
+  border:1px solid rgba(19,78,74,.15);
   overflow:hidden;
+  box-shadow:0 28px 80px rgba(7,20,17,.18);
 }
 .network-canvas{
   position:absolute;inset:0;
@@ -359,18 +362,19 @@
 .network-label{
   position:absolute;
   padding:8px 14px;border-radius:999px;
-  background:rgba(255,255,255,.9);
-  border:1px solid var(--line);
-  box-shadow:var(--shadow-sm);
-  font-size:12px;font-weight:800;color:var(--primary);
+  background:rgba(13,29,24,.92);
+  border:1px solid rgba(72,226,163,.15);
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+  font-size:12px;font-weight:800;color:#b8e6d3;
   backdrop-filter:blur(8px);
   white-space:nowrap;
   transform:translate(-50%,-50%);
-  transition:box-shadow .3s ease;
+  transition:all .3s ease;
 }
 .network-label.active{
-  box-shadow:0 0 0 2px rgba(30,199,139,.3),var(--shadow-md);
-  color:var(--primary-strong);
+  box-shadow:0 0 0 2px rgba(72,226,163,.4),0 12px 28px rgba(72,226,163,.15);
+  color:#48e2a3;
+  border-color:rgba(72,226,163,.4);
 }
 
 /* ============================================================
