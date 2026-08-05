@@ -1,115 +1,298 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRMka — система продаж, которая не дает терять клиентов</title>
-    <meta name="description" content="Продающий сайт CRMka: заявки, воронка продаж, контроль менеджеров, автоматизация и аналитика для владельцев бизнеса." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-<header class="site-header">
-  <a class="brand" href="index.html" aria-label="CRMka">
-    <img src="assets/logo-hq.png" alt="CRMka" />
-    <span>CRMka</span>
-  </a>
-  <nav class="nav">
-    <a class="active" href="index.html">Главная</a>
-    <a class="" href="product.html">Возможности</a>
-    <a class="" href="automation.html">Автоматизация</a>
-    <a class="" href="prices.html">Тарифы</a>
-    <a class="" href="about.html">О нас</a>
-  </nav>
-  <a class="header-cta" href="index.html#request">Получить демо</a>
-</header>
-    <main>
-<section class="hero">
-  <div class="hero-copy reveal">
-    <p class="eyebrow">Система продаж для растущих компаний</p>
-    <h1>Не теряйте клиентов. Доведите каждую заявку до оплаты.</h1>
-    <p class="lead">CRMka собирает обращения из всех каналов, показывает слабые места отдела продаж и помогает руководителю видеть, где прямо сейчас застряли деньги.</p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#request">Получить демонстрацию</a>
-      <a class="btn" href="product.html">Посмотреть возможности</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GickCRM — премиальная CRM для заявок, продаж и контроля команды</title>
+  <meta name="description" content="GickCRM объединяет заявки, канбан, коммуникации, задачи, автоматизации и управленческую аналитику в одном рабочем пространстве для продаж и клиентских команд." />
+  <meta name="theme-color" content="#134e4a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="GickCRM — заявки, продажи и команда под контролем" />
+  <meta property="og:description" content="CRM для заявок, коммуникаций, автоматизаций и управленческой аналитики." />
+  <meta property="og:image" content="assets/product/kanban-new.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home-v2.css" />
+</head>
+<body class="home-v2-body">
+  <div class="noise"></div>
+
+  <header class="nav-shell home-nav">
+    <a class="brand" href="#top" aria-label="GickCRM">
+      <span class="brand-mark"><img src="assets/logo-hq.png" alt="Логотип GickCRM" /></span>
+      <span>GickCRM</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#product">Продукт</a>
+      <a href="#workflow">Как работает</a>
+      <a href="#showcase">Интерфейс</a>
+      <a href="#analytics">Аналитика</a>
+      <a href="#pricing">Тарифы</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="text-link" href="#demo">Связаться</a>
+      <a class="button button-small" href="#demo">Запросить демо</a>
     </div>
-    <div class="hero-points">
-      <span>Заявки в одном месте</span>
-      <span>Контроль менеджеров</span>
-      <span>Напоминания и задачи</span>
-      <span>Понятная аналитика</span>
+    <button class="menu-button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#product">Продукт</a>
+    <a href="#workflow">Как работает</a>
+    <a href="#showcase">Интерфейс</a>
+    <a href="#analytics">Аналитика</a>
+    <a href="#pricing">Тарифы</a>
+  </div>
+
+  <main id="top">
+    <section class="hero-v3 section-pad">
+      <div class="hero-v3__grid"></div>
+      <div class="hero-v3__glow hero-v3__glow--a"></div>
+      <div class="hero-v3__glow hero-v3__glow--b"></div>
+      <div class="hero-v3__copy reveal">
+        <div class="pill hero-pill"><span class="pulse"></span> CRM для продаж, заявок, коммуникаций и управленческого контроля</div>
+        <h1>Премиальное рабочее пространство<br><span>для команды, которая не хочет терять клиентов.</span></h1>
+        <p>
+          GickCRM собирает канбан, карточку клиента, задачи, переписки, автоматизации и руководительскую аналитику в одной системе.
+          Менеджер понимает, что делать дальше. Руководитель сразу видит, где теряются заявки, сроки и деньги.
+        </p>
+        <div class="hero-actions hero-actions-v2">
+          <a class="button" href="#demo">Получить демонстрацию <i>↗</i></a>
+          <a class="button button-ghost" href="#showcase">Смотреть интерфейс</a>
+        </div>
+        <div class="trust-row trust-row-v2">
+          <div class="avatars"><span>АК</span><span>МР</span><span>ДС</span><span>+12</span></div>
+          <p><b>Команда начинает работать в первый день</b><br>Без тяжёлого внедрения, перегруженных экранов и лишнего шума.</p>
+        </div>
+        <div class="hero-v3__stats reveal">
+          <article><small>North Star Metric</small><strong>91%</strong><span>активных заявок с актуальным следующим действием</span></article>
+          <article><small>Фокус менеджера</small><strong>1 окно</strong><span>канбан, карточка и коммуникации без переключений</span></article>
+          <article><small>Для руководителя</small><strong>0 слепых зон</strong><span>просрочки, KPI, узкие места и качество обработки</span></article>
+        </div>
+      </div>
+
+      <div class="hero-v3__visual reveal" data-stack-tilt>
+        <div class="beam"></div>
+        <div class="hero-v3__ring hero-v3__ring--a"></div>
+        <div class="hero-v3__ring hero-v3__ring--b"></div>
+
+        <div class="floating-chip floating-chip--top hero-chip">
+          <span class="floating-chip__icon">⚡</span>
+          <div><small>Автоматизация</small><b>Создать задачу, если у лида нет следующего шага</b></div>
+        </div>
+
+        <div class="floating-chip floating-chip--bottom hero-mascot">
+          <div class="hero-mascot__bubble"><img src="assets/mascot-run.png" alt="Маскот GickCRM — Гик" /></div>
+          <div><small>Помощник GickCRM</small><b>Гик подсказывает, куда смотреть в первую очередь</b></div>
+        </div>
+
+        <div class="screen-stack-v3">
+          <article class="screen-card screen-card--main">
+            <div class="screen-card__top"><div class="dots"><i></i><i></i><i></i></div><span>CRM / Канбан / Основная воронка</span></div>
+            <img src="assets/product/kanban-new.png" alt="Канбан GickCRM" />
+            <div class="screen-card__shine"></div>
+          </article>
+          <article class="screen-card screen-card--secondary">
+            <div class="screen-card__badge">Руководитель</div>
+            <img src="assets/product/management-new.png" alt="Управленческая панель GickCRM" />
+          </article>
+        </div>
+      </div>
+      <div class="scroll-hint hero-scroll-v2">Листайте, чтобы увидеть продукт <span>↓</span></div>
+    </section>
+
+    <section class="signal-strip reveal">
+      <div class="signal-strip__text">
+        <p>Единое пространство для отделов продаж, сервиса, маркетинга и клиентских команд</p>
+      </div>
+      <div class="signal-strip__tags">
+        <span>Sales</span>
+        <span>Support</span>
+        <span>Marketing</span>
+        <span>Operations</span>
+        <span>Management</span>
+      </div>
+    </section>
+
+    <section class="section home-section" id="product">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">Продуктовый core</span>
+          <h2>CRM, которая ускоряет обработку заявки<br>и делает продажи прозрачными.</h2>
+        </div>
+        <p>
+          Главный фокус — канбан, карточка клиента, история коммуникаций, следующее действие, автоматизации и аналитика руководителя.
+          Без раннего перегруза и лишней enterprise-сложности.
+        </p>
+      </div>
+      <div class="bento-v3">
+        <article class="bento-v3__card bento-v3__card--wide reveal">
+          <div class="bento-v3__copy">
+            <span class="icon-box">▣</span>
+            <h3>Рабочий экран, в котором всё под рукой</h3>
+            <p>Заявки, ежедневный контур, показатели, просрочки и зоны внимания собраны в одном понятном интерфейсе.</p>
+          </div>
+          <div class="mini-screen"><img src="assets/product/dashboard-new.png" alt="Главная панель GickCRM" /></div>
+        </article>
+        <article class="bento-v3__card reveal">
+          <span class="icon-box">◎</span>
+          <h3>Карточка клиента и история касаний</h3>
+          <p>Контакты, этап, переписка, задачи, следующее действие и история изменений — в одном месте.</p>
+          <ul class="check-list">
+            <li>История сообщений и звонков</li>
+            <li>Задачи и напоминания</li>
+            <li>Следующий шаг без просрочки</li>
+          </ul>
+        </article>
+        <article class="bento-v3__card bento-v3__card--dark reveal">
+          <div class="card-noise"></div>
+          <span class="icon-box dark-icon">⚡</span>
+          <h3>Автоматизации, которые действительно снимают рутину</h3>
+          <p>Триггеры и действия помогают не забывать о клиентах, назначать ответственных и поддерживать дисциплину процесса.</p>
+          <div class="flow-line"><span>Новая заявка</span><i></i><span>Назначить менеджера</span><i></i><span>Создать задачу</span></div>
+        </article>
+        <article class="bento-v3__card reveal">
+          <span class="icon-box">◌</span>
+          <h3>Интеграции и единое окно коммуникаций</h3>
+          <p>Telegram, WhatsApp, email, телефония и другие каналы работают как единая история клиента.</p>
+          <div class="tag-cloud"><span>Telegram</span><span>WhatsApp</span><span>Email</span><span>Телефония</span><span>VK</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section home-section workflow-v2" id="workflow">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">Один прозрачный процесс</span>
+        <h2>От заявки до управляемого результата</h2>
+        <p>GickCRM делает ежедневную работу менеджера понятной, а работу руководителя — прозрачной и управляемой.</p>
+      </div>
+      <div class="steps-v2">
+        <article class="reveal"><span>01</span><h3>Заявка попадает в CRM</h3><p>Из сайта, мессенджеров, рекламы, email или звонка — сразу в воронку.</p></article>
+        <article class="reveal"><span>02</span><h3>Менеджер видит, что делать дальше</h3><p>Источник, приоритет, история, владелец и следующее действие показываются сразу.</p></article>
+        <article class="reveal"><span>03</span><h3>Система контролирует движение</h3><p>Просрочки, задачи и автоматизации не дают заявкам остыть и зависать без касания.</p></article>
+        <article class="reveal"><span>04</span><h3>Руководитель видит слабые места</h3><p>Потери, KPI, эффективность сотрудников и маркетинговых каналов становятся прозрачными.</p></article>
+      </div>
+    </section>
+
+    <section class="section home-section aura-section">
+      <div class="aura-card reveal">
+        <div class="aura-card__copy">
+          <span class="eyebrow">Абстрактный слой управления</span>
+          <h2>Контроль ощущается не как тяжёлый ERP-контур, а как чистая и быстрая система.</h2>
+          <p>Мы добавили отдельный визуальный слой, который усиливает технологичность бренда без перегруза интерфейсом. Это абстрактная анимация, не привязанная к скриншотам — чтобы сайт ощущался премиальным, а не просто каталогом экранов.</p>
+        </div>
+        <div class="aura-stage" aria-hidden="true">
+          <div class="aura-orb"></div>
+          <div class="aura-orbit aura-orbit--one"></div>
+          <div class="aura-orbit aura-orbit--two"></div>
+          <div class="aura-grid"></div>
+          <div class="aura-node aura-node--a">Leads</div>
+          <div class="aura-node aura-node--b">Tasks</div>
+          <div class="aura-node aura-node--c">Chats</div>
+          <div class="aura-node aura-node--d">KPI</div>
+          <div class="aura-node aura-node--e">Automation</div>
+          <div class="aura-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-section showcase-v3" id="showcase">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">Внутри GickCRM</span>
+          <h2>Ключевые экраны собраны в живую продуктовую витрину.</h2>
+        </div>
+        <p>Главная панель, канбан, чат, календарь, автоматизации, сотрудники, журнал активности и помощник — всё это показано как единая экосистема, а не просто список картинок.</p>
+      </div>
+      <div class="showcase-grid">
+        <figure class="showcase-card showcase-card--xl reveal"><img src="assets/product/kanban-new.png" alt="Канбан GickCRM" /><figcaption><strong>Канбан продаж</strong><span>Главный рабочий экран с этапами, приоритетами и быстрым доступом к контексту сделки.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/dashboard-new.png" alt="Главная панель GickCRM" /><figcaption><strong>Главная панель</strong><span>Ежедневный контур и сводка по ключевым показателям.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/management-new.png" alt="Руководительская панель" /><figcaption><strong>Руководительская панель</strong><span>Быстрый обзор управленческих показателей и узких мест.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/chat-new.png" alt="Внутренний чат GickCRM" /><figcaption><strong>Внутренний чат</strong><span>Командное взаимодействие прямо внутри CRM.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/calendar-new.png" alt="Календарь GickCRM" /><figcaption><strong>Календарь</strong><span>События, встречи и планирование ежедневной работы.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/activity-new.png" alt="Журнал активности GickCRM" /><figcaption><strong>Журнал активности</strong><span>Операционная прозрачность: кто и что делал в системе.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/automation-new.png" alt="Автоматизации GickCRM" /><figcaption><strong>Автоматизации</strong><span>Правила, сценарии и рабочий контроль без ручной рутины.</span></figcaption></figure>
+        <figure class="showcase-card reveal"><img src="assets/product/employees-new.png" alt="Сотрудники и доступы GickCRM" /><figcaption><strong>Сотрудники и доступы</strong><span>Статусы команды, роли и управление рабочим контуром.</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section analytics-v3" id="analytics">
+      <div class="analytics-v3__copy reveal">
+        <span class="eyebrow">Управленческая аналитика</span>
+        <h2>Руководитель видит не красивый отчёт, а реальную операционную картину.</h2>
+        <p>Сколько заявок в работе, где просрочки, у кого нет следующего действия, где падает конверсия и какие каналы дают качественный входящий поток — всё это собирается в одном управленческом слое.</p>
+        <ul>
+          <li><span>✓</span>Продажи и воронка по этапам</li>
+          <li><span>✓</span>Активность команды и дисциплина касаний</li>
+          <li><span>✓</span>KPI, маркетинг и руководительские срезы</li>
+        </ul>
+      </div>
+      <div class="analytics-v3__visual reveal">
+        <div class="analytics-panel-v3">
+          <div class="analytics-panel-v3__head"><div><small>Главный обзор</small><h3>Оперативная аналитика CRM</h3></div><span>Online</span></div>
+          <img src="assets/product/analytics-activity.png" alt="Аналитика GickCRM" />
+          <div class="analytics-badges"><div><small>Активные заявки</small><b>3</b></div><div><small>Без следующего действия</small><b>3</b></div><div><small>Просроченные задачи</small><b>2</b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-section" id="pricing">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">Понятный старт</span>
+        <h2>Тарифы, с которых можно расти без лишней сложности</h2>
+        <p>Сильный core-продукт сначала. Расширение — только там, где оно реально повышает ценность для команды и руководителя.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal"><span class="plan">Start</span><h3>Lite</h3><p>Для небольшой команды, которой нужен базовый контур продаж, задач и коммуникаций.</p><div class="price"><b>от 3 500 ₽</b><span>/ месяц</span></div><ul><li>Канбан и карточка заявки</li><li>Задачи и следующее действие</li><li>Базовая аналитика</li><li>Интеграции и коммуникации</li></ul><a class="button button-ghost" href="#demo">Выбрать Lite</a></article>
+        <article class="price-card featured reveal"><span class="popular">Основной выбор</span><span class="plan">Growth</span><h3>Team</h3><p>Для активных отделов продаж и клиентских команд, которым нужен контроль процесса и автоматизация рутины.</p><div class="price"><b>По запросу</b><span>Подбирается под команду</span></div><ul><li>Всё из Lite</li><li>Автоматизации и правила</li><li>KPI и расширенная аналитика</li><li>Контроль руководителя</li><li>Маркетинговые каналы и источники</li></ul><a class="button" href="#demo">Запросить демо</a></article>
+        <article class="price-card reveal"><span class="plan">Scale</span><h3>Business</h3><p>Для команд, где важны несколько воронок, сложные сценарии, права доступа и масштабирование.</p><div class="price"><b>Индивидуально</b><span>После демонстрации</span></div><ul><li>Мультироли и доступы</li><li>Несколько воронок и процессов</li><li>Приоритетные интеграции</li><li>Гибкие настройки и масштабирование</li></ul><a class="button button-ghost" href="#demo">Обсудить проект</a></article>
+      </div>
+    </section>
+
+    <section class="section home-section">
+      <div class="cta-v3" id="demo">
+        <div class="cta-v3__copy reveal">
+          <div class="pill dark-pill"><span class="pulse"></span> Демо GickCRM</div>
+          <h2>Покажем, как GickCRM может работать именно в вашем процессе.</h2>
+          <p>Разберём, откуда приходят заявки, как менеджеры ведут клиентов, где теряются касания и как быстро собрать сильный CRM-контур без перегруза интерфейса.</p>
+          <div class="cta-v3__mascot"><div class="cta-v3__mascot-bubble"><img src="assets/mascot-run.png" alt="Маскот GickCRM — Гик" /></div><div><strong>Гик остаётся рядом</strong><span>Не ради декора, а как дружелюбный фирменный помощник бренда.</span></div></div>
+        </div>
+        <form class="demo-form reveal" data-contact-form data-recipient="hello@gickcrm.ru">
+          <label>Ваше имя<input type="text" name="name" placeholder="Например, Роман" required /></label>
+          <label>Компания<input type="text" name="company" placeholder="Название компании" required /></label>
+          <label>Email или Telegram<input type="text" name="contact" placeholder="mail@company.ru / @username" required /></label>
+          <label>Что хотите решить<input type="text" name="goal" placeholder="Хочу навести порядок в заявках и контроле" /></label>
+          <button class="button" type="submit">Запросить демонстрацию ↗</button>
+          <small>После отправки откроется ваше почтовое приложение с подготовленным письмом на hello@gickcrm.ru.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-v3">
+    <div class="footer-main">
+      <div>
+        <a class="brand" href="#top"><span class="brand-mark"><img src="assets/logo-hq.png" alt="Логотип GickCRM" /></span><span>GickCRM</span></a>
+        <p>CRM для заявок, продаж, коммуникаций, автоматизаций и управленческой аналитики.</p>
+      </div>
+      <p>Помогаем командам не терять лиды, держать следующий шаг под контролем и делать продажи прозрачными каждый день.</p>
+      <div class="footer-links">
+        <div><b>Продукт</b><a href="#product">Возможности</a><a href="#workflow">Процесс</a><a href="#analytics">Аналитика</a></div>
+        <div><b>Компания</b><a href="about.html">О нас</a><a href="product.html">Страницы продукта</a><a href="prices.html">Тарифы</a></div>
+        <div><b>Связь</b><a href="#demo">Запросить демо</a><a href="mailto:hello@gickcrm.ru">hello@gickcrm.ru</a><a href="https://gickcrm.ru">gickcrm.ru</a></div>
+      </div>
     </div>
-  </div>
-  <div class="hero-media reveal">
-    <img class="mascot" src="assets/hero-mascot.jpg" alt="Маскот CRMka" />
-  </div>
-</section>
+    <div class="footer-bottom"><span>© 2026 GickCRM. Все права защищены.</span><span>Премиальный маркетинговый сайт продукта.</span></div>
+  </footer>
 
-<section class="metrics reveal">
-  <div><strong data-counter="37">0</strong><span>меньше потерянных заявок</span></div>
-  <div><strong data-counter="52">0</strong><span>быстрее первый ответ клиенту</span></div>
-  <div><strong data-counter="64">0</strong><span>меньше просрочек в работе</span></div>
-  <div><strong data-counter="28">0</strong><span>рост управляемости отдела</span></div>
-</section>
-
-<section class="section split">
-  <div class="section-title reveal">
-    <p class="eyebrow">Почему это покупают</p>
-    <h2>Владелец видит продажи как систему, а не как набор переписок и обещаний</h2>
-  </div>
-  <div class="benefit-list reveal">
-    <article><b>Клиенты не пропадают</b><p>Каждое обращение попадает в работу, получает ответственного и следующий шаг.</p></article>
-    <article><b>Команда работает дисциплинированно</b><p>Просрочки, забытые звонки и сделки без движения видны руководителю сразу.</p></article>
-    <article><b>Выручка становится понятнее</b><p>Вы видите, какие каналы дают заявки, где падает конверсия и кто приносит результат.</p></article>
-  </div>
-</section>
-
-<section class="section product-showcase">
-  <div class="section-title center reveal">
-    <p class="eyebrow">Что внутри</p>
-    <h2>Все, что нужно отделу продаж каждый день</h2>
-  </div>
-  <div class="feature-grid">
-    <a class="feature reveal" href="product.html"><span>01</span><h3>Воронка и заявки</h3><p>Простой рабочий экран для новых клиентов, сделок, задач и ответственных.</p></a>
-    <a class="feature reveal" href="automation.html"><span>02</span><h3>Автоматизация рутины</h3><p>Система сама напоминает, ставит задачи и не дает сделке остыть.</p></a>
-    <a class="feature reveal" href="product.html#control"><span>03</span><h3>Контроль результата</h3><p>Руководитель видит скорость обработки, просрочки, активность и деньги.</p></a>
-    <a class="feature reveal" href="product.html#channels"><span>04</span><h3>Все каналы связи</h3><p>Сайт, мессенджеры, почта и звонки собираются в единую картину клиента.</p></a>
-  </div>
-</section>
-
-<section class="section visual-band reveal">
-  <img src="assets/mascot-grid-wide.png" alt="Маскот CRMka в разных сценариях" />
-  <div>
-    <p class="eyebrow">Бренд, который запоминают</p>
-    <h2>CRMka выглядит дружелюбно, но работает как строгий отдел контроля продаж</h2>
-    <p>Маскот помогает сделать продукт живым и узнаваемым, а интерфейс остается спокойным, деловым и понятным для команды.</p>
-  </div>
-</section>
-
-<section class="section pricing-teaser" id="request">
-  <div class="section-title center reveal">
-    <p class="eyebrow">Тарифы и демонстрация</p>
-    <h2>Выберите формат внедрения под размер отдела продаж</h2>
-    <p class="section-lead">На отдельной странице собрали понятные пакеты: для старта, роста и команды с несколькими направлениями продаж.</p>
-    <div class="hero-actions centered-actions">
-      <a class="btn primary" href="prices.html">Смотреть тарифы</a>
-      <a class="btn" href="mailto:demo@crmka.ru">Запросить демонстрацию</a>
-    </div>
-  </div>
-</section></main>
-    
-<footer class="footer">
-  <div>
-    <strong>CRMka</strong>
-    <span>Система продаж для компаний, которым нужен порядок в заявках, команде и выручке.</span>
-  </div>
-  <a href="index.html#request">Запросить демонстрацию</a>
-</footer>
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <script src="home-v2.js"></script>
+</body>
 </html>
